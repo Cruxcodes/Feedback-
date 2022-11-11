@@ -1,13 +1,109 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+    background: rgb(9, 71, 132);
+    position: relative;
+    padding-bottom: 30px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card{
+    box-sizing: border-box;
+    padding: 30px;
+    background: white;
+    position: relative;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: -3px 9px 20px rgb(56 54 54);
+}
+
+.num-display{   
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: pink;
+    border: 3px solid white;
+    position: absolute;
+    border-radius: 50px;
+    text-align: center;
+    left: -2%;
+    top: -10%;
+}
+
+.rating-display{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: pink;
+    border: 3px solid white;
+    /* position: absolute; */
+    border-radius: 50px;
+    text-align: center;
+    left: -2%;
+    top: -10%;
+}
+.card.reverse{
+    background-color: rgba(0, 0, 0, 0.398);
+    color: white;
+}
+
+.container{
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.close{
+    background: none;
+    border: none;
+    float: right;
+}
+
+.feedback-stats{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.btn{
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary{
+    background: #202142;
+}
+
+.btn-secondary{
+    background: #ff6a95;
+}
+
+.rating{
+    padding: 00px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.rating li{
+    list-style-type: none;
+}
+
+
+.aboutLink{
+    position: absolute;
+    right: 5%;
+    bottom: 10px;
+    color: white;
+}
+
+
+.formInput{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
 }
